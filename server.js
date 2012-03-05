@@ -22,6 +22,12 @@ app.get('*', function(req,res) {
   res.send('NO way jose',404);
 });
 
+app.configure('production', function(){
+  var oneYear = 31557600000;
+  app.use(express.static(__dirname + '/public', { maxAge: oneYear }));
+  app.use(express.errorHandler());
+});
+
 app.listen(23338);
 
 function getURI(request) {
