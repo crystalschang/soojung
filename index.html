@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Snippet' rel='stylesheet' type='text/css'>
+<style type="text/css">
+	* {margin:0; padding:0px;}
+	div#content {margin:0 auto; width:640px;}
+	body {
+		background:#c1cad1 url("./imgs/layer1.png") 20% 0 repeat-x;
+
+	}
+	#header {position:relative; height:150px;}
+	#midground {background:transparent url("./imgs/layer2.png") 40% 0 repeat-x; height:200px; position:absolute; width:100%;}
+	#foreground{background:transparent url("./imgs/layer3.png") 150% 0 repeat-x; height:200px; position:absolute; width:100%;}
+
+	#container {width:850px; margin:0 auto;}
+	#main{ }
+	#title{font-family:'Amatic SC',cursive; font-size:50px;}
+	#content {font-family:'Lato', sans-serif;}
+
+	#footer {
+		position:absolute;
+		bottom:0px;
+		height:150px;
+		width:100%;
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #c1cad1));
+
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #c1cad1 100%);
+	}
+	#instagramFeed {width:850px; margin:40px auto 0 auto;}
+	.instaPic {width:80px; height:80px; margin: 1px; border: 1px solid grey; display:none;}
+</style>
+</head>
+<body>
+<div id="header">
+	<div id="midground"></div>
+	<div id="foreground"></div>
+</div>
+
+<div id="container">
+<div id="main">
+	<div id="title">soo-jung</div>
+	<div id="content">
+	This is some content right hurr! Crystal Chang is my name and poopin' is my game.
+	</div>
+</div>
+</div>
+
+<div id="footer">
+	<div id="rumgrFeed"></div>
+	<div id="instagramFeed"></div>
+</div>
+
+<script src="./lib/jquery.js"></script>
+<script src="./lib/api.js"></script>
+</body>
+</html> 
