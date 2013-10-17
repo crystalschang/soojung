@@ -8,7 +8,7 @@ console.log(__dirname+'/imgs')
 app.use(express.static(__dirname + '/public',{ maxAge: 90000 }));
 
 app.get('/', function(req,res) {
-  getFile('/index.html',req,res);
+  res.redirect(301, 'http://www.crystalschang.com');
 });
 
 app.get('/lib/*', function(req,res) {
