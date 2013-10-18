@@ -19,7 +19,7 @@ app.get('*', function(req,res) {
   res.send('NO way jose',404);
 });
 
-app.listen(23338);
+app.listen(process.env.PORT || 23338);
 
 function getURI(request) {
     return url.parse(request.url).pathname;
