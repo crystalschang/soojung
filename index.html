@@ -21,7 +21,12 @@
 	#title{font-family:'Amatic SC',cursive; font-size:50px;}
 	#content {font-family:'Lato', sans-serif;}
 	#blog {font-size:13px;text-decoration:none;color:#176990;}
-
+	#pics {
+		text-align: center;
+		margin: 10px auto 0 auto;
+		width: 400px;
+		height: 381px;
+	}
 	#footer {
 		position:absolute;
 		bottom:0px;
@@ -33,8 +38,8 @@
 		/* Webkit (Chrome 11+) */ 
 		background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #c1cad1 100%);
 	}
-	#instagramFeed {width:850px; margin:40px auto 0 auto;}
-	.instaPic {width:80px; height:80px; margin: 1px; border: 1px solid grey; display:none;}
+	#ixnstagramFeed {width:850px; margin:40px auto 0 auto;}
+	.instaPic {width:120px; height:120px; margin: 1px; border: 1px solid grey; display:none;}
 </style>
 </head>
 <body>
@@ -49,15 +54,14 @@
 	<div id="content">
 	<p>Oh hi!</p>
 	<p>My name is Crystal Soojung Chang.</p>
-	<img class="mainImage" src="http://s3.amazonaws.com/cine_1/1057732.gif"/>
+	<!--img class="mainImage" src="http://s3.amazonaws.com/cine_1/1057732.gif"/-->
+<div id="pics">
+        <div id="rumgrFeed"></div>
+        <div id="instagramFeed"></div>
+</div>
 	<p><a href="http://blog.soo-jung.com" id="blog">blaaahg</a></p>
 	</div>
 </div>
-</div>
-
-<div id="footer">
-	<div id="rumgrFeed"></div>
-	<div id="instagramFeed"></div>
 </div>
 
 <script src="./lib/jquery.js"></script>
